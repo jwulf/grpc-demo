@@ -1,0 +1,19 @@
+{
+  "name": "grpc-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+      "server": "ts-node src/server/index.ts",
+      "client": "ts-node src/client/index.ts",
+      "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@grpc/proto-loader": "^0.3.0",
+    "grpc": "^1.16.1",
+    "minimongo": "^5.0.1",
+    "ts-protoc-gen": "^0.8.0"
+  }
+}
