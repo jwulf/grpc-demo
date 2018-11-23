@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "grpc-server-ts": "^1.0.3",
+    "grpc-server-ts": "^1.0.4",
     "minimongo": "^5.0.1"
   }
 }

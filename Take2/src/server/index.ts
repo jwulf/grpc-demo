@@ -8,29 +8,30 @@ const settings = {
 
 @Service('proto/users.proto')
 export class UsersService {
+
   @Route
-  public async get(user_id) {
+  public async Get(user_id) {
     console.log(`Received get request for ${user_id}`)
     return new Promise(res => db.get(user_id, (err, user) => res({user: [user]})))
   }
 
   @Route
-  public async list() {
+  public async List() {
     console.log(`Received list request `)
     return new Promise(res => db.list((err, user) => res(user)))
   }
 
   @Route
-  public async remove(user_id) {
+  public async Remove(user_id) {
       return null
   }
 
   @Route
-  public async insert() {
+  public async Insert() {
       return null
   }
 }
 
 @Settings(settings)
 class RPC extends RpcRegistry { }
-(RPC as any).start();
+RPC.start();
