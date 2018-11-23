@@ -22,6 +22,8 @@ function main() {
     } else {
         user_id = 1;
     }
+
+    console.log(`Requesting Get(${user_id})`)
     client.Get({ user_id }, function (err, response) {
         if (err) {
             console.error('Error: ' + err)
@@ -29,6 +31,7 @@ function main() {
             console.log('\n === User: ===\n', response.user)
         }
     });
+    console.log(`Requesting List()`)
     client.List({}, (err, res) => {
         console.log('\n === All Users: ===\n', res.user)
     } )

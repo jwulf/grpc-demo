@@ -1,0 +1,16 @@
+{
+  "name": "take2",
+  "version": "1.0.0",
+  "description": "Server based on: https://medium.com/@amulyakashyap09/nodejs-using-grpc-25ffc0d3fb60",
+  "main": "index.js",
+  "scripts": {
+    "server": "ts-node src/server/index.ts",
+    "client": "ts-node src/client/index.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "grpc-server-ts": "^1.0.3",
+    "minimongo": "^5.0.1"
+  }
+}
